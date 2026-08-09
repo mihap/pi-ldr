@@ -1,0 +1,32 @@
+{
+  "name": "pi-ldr",
+  "version": "0.1.0",
+  "description": "Linked Decision Records workflow for Pi projects.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "linked-decision-records",
+    "decision-records",
+    "developer-workflow"
+  ],
+  "files": [
+    "extensions/",
+    "templates/",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/ldr/index.ts"
+    ]
+  },
+  "scripts": {
+    "test": "bun test"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  }
+}
